@@ -1,0 +1,125 @@
+body {
+    margin: 0%;
+    background-color: rgb(182, 218, 74);
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    min-height: 4vw;
+    background-color: green;
+    font-family: 'Labrada', serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 130%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .descripcion {
+        height: auto;
+        font-family: 'Labrada', serif;
+        font-family: 'Poppins', sans-serif;
+        color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .descripcion p {
+            font-weight: 500%;
+            justify-content: center;
+        } 
+
+    .ofertas {
+        height: 30vw;       
+        display: flex;     
+        justify-content: space-around;         
+        gap: 20px;             
+    }
+
+        .ofertas img {
+            height: 55vh;
+            box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+            -webkit-box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+            -moz-box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+            border: 3px solid green;
+            border-radius: 3%;
+            cursor: pointer;
+            border: 2px solid white;
+        }
+
+        .imagen {
+            transition: tranform .2sw;
+        }
+
+        .imagen:hover {
+            transform: scale(1.1);
+        }
+    
+    .formulario {
+        height: 100vh;
+        width: 40vw;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+            -webkit-box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+            -moz-box-shadow: -7px -10px 11px -1px rgba(0,0,0,0.52);
+        border: 2px solid white;
+        border-radius: 5%;
+    }
+
+        .form1 {
+            font-family: 'Labrada', serif;
+            font-family: 'Poppins', sans-serif;
+            color: white; 
+            font-size: 130%;
+        }                
+
+        .form1 input {
+            border-radius: 5%;
+            width: 20vw;
+            height: 4vh;
+        }
+
+        .form1 button {
+            height: 5vh;
+            width: 10vw;
+            border-radius: 7%;
+            background-color: rgb(123, 221, 91);
+            font-size: 70%;
+            cursor: pointer;
+        }   
+        .btn {
+            transition: tranform .2sw;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+   
+
+    .piePagina {
+        min-height: 4vw;
+        background-color: green;
+        font-family: 'Labrada', serif;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;               
+    }
+
+    
