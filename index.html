@@ -8,16 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@1,200&family=Poppins:wght@700&display=swap" rel="stylesheet">
- 
     <title>Viajando.com</title>
 </head>
-<body>
+<body>   
     <nav class="encabezado">     
         <p> <a href="#Nos" style="text-decoration: none"> N o s o t r o s </a></p>
         <p> <a href="#Promo" style="text-decoration: none"> P r o m o c i o n e s</a></p>
         <p><a href="#For" style="text-decoration: none">C o n t a c t o </a></p>    
     </nav>
-    <center class="cuerpo">
+    <div class="cuerpo">
         <div class="descripcion">
             <img src="Imagenes/descrip.jpg" alt="">
             <h1 id="Nos" >Quienes Somos - Viajando.com</h1>
@@ -47,25 +46,29 @@
             
         <div class="formulario" id="For">
             <form class="form1">
-                N o m b r e <br> <input type="text" name="nombre" required=""><br><br>
-                A p e l l i d o <br> <input type="text" name="apellido" required=""><br><br>
-                A p e l l i d o <br> <input type="text" name="apellido" required=""><br><br>
-                O r i g e n <br> <input type="text" name="origen" required=""><br><br>
-                D e s t i n o <br> <input type="text" name="destino" required=""><br><br>
-                P a x <br> <input type="number" name="personas" required=""><br><br>
-                F e c h a  <br> <input type="date" name="fecha" required=""><br><br>
+                N o m b r e <br> <input id="nom" type="text" name="nombre" required=""><br>
+                A p e l l i d o <br> <input id="ape" type="text" name="apellido" required=""><br>
+                O r i g e n <br> <input id="ori" type="text" name="origen" required=""><br>
+                D e s t i n o <br> <input id="des" type="text" name="destino" required=""><br>
+                P a x <br> <input id="pax" type="number" name="personas" required=""><br>
+                F e c h a  <br> <input id="fec" type="date" name="fecha" required=""><br>
                 <br>
-                <button class="btn">Solicitar Infomacion</button>
-                <button class="btn">Filtrar</button>
-            </form>           
+                <button type="button" onclick="contacto()" class="btn" > Solicitar Infomacion </button> 
+                <button type="button" onclick="filter()" class="btn"> Filtrar </button>
+            </form>                     
         </div>
-    </center>
+
+        <div id="destinosFiltrados"></div> 
+           
+    </div>
     <footer class="piePagina">
         <p> Calle de las Virtudes 1, portal 4. Algete - Madrid</p>
         <p> Copyright  </p>       
     </footer>
 
 
-
+    <script src="funciones.js"></script>
 </body>
 </html>
+
+
